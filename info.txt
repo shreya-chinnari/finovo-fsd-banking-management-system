@@ -1,0 +1,57 @@
+In Next.js 13+ with the App Router, route groups are a way to organize your routes without affecting the URL structure. They're useful for code organization, layout separation, and UI composition.
+
+============================================================
+
+❓ Why don't we use Vite in a Next.js project?
+
+▶️ Next.js has its own bundler
+
+As of Next.js 13+, it uses a highly optimized custom compiler and bundler:
+
+   Turbopack (next-gen bundler written in Rust, replacing Webpack)
+   Previously Webpack (still used if Turbopack isn't opted in)
+
+So, there's no need for Vite, because:
+
+✅ Next.js already includes:
+
+   Routing
+   API routes
+   File-based structure
+   Full SSR/SSG/ISR
+   Built-in CSS, PostCSS, Tailwind support
+   Advanced HMR (hot module reloading)
+
+⚡ But Vite is really fast—why not use it anyway?
+
+   You're right—Vite is blazingly fast, especially for development. But:
+   Vite is meant for simpler React, Vue, or vanilla JS apps
+   Next.js is more than a frontend bundler — it's a full-stack framework with SSR, middleware, routing, etc.
+
+👉 Using Vite in Next.js would mean replacing or duplicating core features.
+
+=====================================================
+
+shadcn/ui is a modern, customizable UI component library built with:
+
+   Tailwind CSS
+   Radix UI primitives
+   Fully accessible
+   Built for React and Next.js
+
+A collection of copy-paste UI components that you own and control — not a library you import.
+Instead of installing it as a package, you copy components into your codebase, so you can customize everything.
+
+
+====================================================================
+
+children is a special React prop that contains any JSX/content passed between the opening and closing tags of this component.
+
+The Readonly<{ children: React.ReactNode }> type:
+
+Ensures children is a valid React node.
+
+Declares it as read-only (good TypeScript practice).
+
+
+================================================================
